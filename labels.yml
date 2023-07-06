@@ -4,16 +4,16 @@
 - name: bug
   description: Unintended behaviour in any area of the app
   color: fc2929
-- name: decision needed
+- name: decision-needed
   description: A decision is required (eg on UX or company policy)
   color: fbca04
 - name: dependencies
   description: Significant updates to dependencies are required
   color: 0366d6
-- name: design (UI)
+- name: design-ui
   description: Related to visual design
   color: ed5e76
-- name: developer experience (DX)
+- name: developer-experience
   description: Improves our lives/efficiency as developers
   color: dea5ba
 - name: devops
@@ -31,7 +31,7 @@
 - name: feature
   description: A new feature of the app
   color: 84b6eb
-- name: help wanted
+- name: help-wanted
   description: Applied by the assigned developer if they need help
   color: 159818
 - name: performance
