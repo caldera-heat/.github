@@ -1,0 +1,31 @@
+name: Sync Labels
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      # The labels file
+      - labels.yml
+      # This workflow
+      - .github/workflows/sync-labels.yaml
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Sync Labels
+        uses: micnncim/action-label-syncer@v1
+        with:
+          manifest: labels.yml
+          prune: true
+          repository: |
+            caldera-heat/.github
+            caldera-heat/thingsboard
+
+          token: ${{ secrets.LABEL_SYNC_TOKEN }}
