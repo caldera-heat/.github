@@ -27,5 +27,8 @@ jobs:
           repository: |
             caldera-heat/.github
             caldera-heat/thingsboard
+            caldera-heat/apolaki-controller
+            caldera-heat/apolaki-widget-solar-availability
+            caldera-heat/toba
 
           token: ${{ secrets.LABEL_SYNC_TOKEN }}
